@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F2F5">
+
+    <!-- Beautiful Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/header_gradient"
+        android:padding="24dp">
+
+        <!-- App Logo -->
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Book Catalog"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover Your Next Great Read"
+            android:textSize="14sp"
+            android:textColor="#E0E0E0"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <!-- Book Count Badge -->
+        <TextView
+            android:id="@+id/tvBookCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Books Available"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="#33FFFFFF"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+    <!-- Book List -->
+    <ListView
+        android:id="@+id/listViewBooks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:padding="4dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>
